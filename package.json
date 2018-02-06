@@ -4,7 +4,7 @@
     "description": "Hometrack Code Test",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon -w src --exec \"babel-node src --presets env,stage-0\"",
+        "dev": "nodemon -w src --exec \"babel-cli src --presets env,stage-0\"",
         "test": "mocha test/unit --compilers js:babel-register"
     },
     "author": "Eddy Ella",

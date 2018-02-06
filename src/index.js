@@ -17,7 +17,8 @@ app.get('/', (req, res) => {
 
 app.post('/', MainController.homes)
 
-const server = app.listen(3001, () => {
+const port = process.env.PORT || 3000
+const server = app.listen(port, () => {
     console.log(`App is listening on port ${ server.address().port }`)
 })
 
